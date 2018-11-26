@@ -19,4 +19,4 @@ You will be able to make group chats with specific people and name the group cha
 Technologies Implemented:
    -HTML / CSS
    -Node / JavaScript
-   -Mongo
+   -MongoDB
