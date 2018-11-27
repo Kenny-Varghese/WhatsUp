@@ -1,12 +1,12 @@
 {
-    "name" : "whatsup", 
-    "version" : "1.0.0",
-    "scripts" : {
-        "start" : "node server.js"
+    "name": "whatsup",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "node server.js"
     },
     "dependencies": {
-        "express" :"4.16.4"
+        "express": "4.16.4"
     },
-        "authors"  : "Richa, Rohan, Kenny",
-        "license": "ISC"
+    "authors": "Richa, Rohan, Kenny",
+    "license": "ISC"
 }
