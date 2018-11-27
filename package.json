@@ -5,6 +5,7 @@
         "start": "node server.js"
     },
     "dependencies": {
+        "@angular/cli": "^7.1.0",
         "express": "4.16.4"
     },
     "authors": "Richa, Rohan, Kenny",
