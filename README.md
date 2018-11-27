@@ -20,3 +20,5 @@ Technologies Implemented:
    -HTML / CSS
    -Node / JavaScript
    -Mongo
+
+Tryna git
