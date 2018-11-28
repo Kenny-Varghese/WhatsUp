@@ -6,14 +6,19 @@
       top: 0;
       overflow-x: hidden;
       padding-top: 20px;
+      
 }
-
+.button{
+      margin-top: 250px;
+}
 .left {
-      left: 0
+      left: 0;
+      background-color: #00a3cc;
 }
 
 .right {
-      right: 0
+      right: 0;
+      background-color:#9999ff;
 }
 
 .centered {
@@ -23,3 +28,14 @@
       transform: translate(-50%, -50%);
       text-align: center;
 }
+.inside{
+      background-color: #ccccff;
+      padding: 200px;
+      margin: 0px;
+}
+.inside2{
+      background-color: #b3f0ff;
+      padding: 200px;
+      margin: 0px;
+}
+
