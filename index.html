@@ -9,44 +9,56 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
+    <!-- <body>
+        <img class="photo" width="100%" src="space.jpg">
+        <div class = "tab">
+            <button class="tablinks" onclick="openOther(event, Login)"></button>
+            <button class="tablinks" onclick="openOther(event, SignUp)"></button>
+        </div>
+    </body> -->
     <body>
-          <div class="split left">
-              <div class="centered inside2">
-                  <div class ="container">
-                  <form>
-                      Username: <br>
-                      <input type="text" name="username">
-                      <br><br>
-                      Password: <br>
-                      <input type="password" name="password">
-                      <br>
-                      <a href="#" class="w3-btn w3-black button">Login</a>
-                  </form>
-                  </div>
-         </div>
-         <div class="split right">
-                <div class="centered inside">
-                    <div class ="container2">
-                        <form>
-                                Name: <br>
-                                <input type="text" name="name">
-                                <br>
-                                <br>
-                                Email: <br>
-                                <input type="text" name="email">
-                                <br>
-                                <br>
-                                Username: <br>
-                                <input type="text" name="username">
-                                <br><br>
-                                Password: <br>
-                                <input type="password" name="password">
-                                <br>
-                                <a href="#" class="w3-btn w3-black button">Sign Up</a>
-                            </form>
-                        </div>
-                </div>
-         </div>
+        <div id="title">
+            <h1 class= "text-size"> Whats Up!</h1>
+        </div>
+        <img class="photo" width="100%" src="space.jpg">
+        <div class = "container left">
+            <div class="tab centered">
+              <button class="tablinks" onclick="openCity(event, 'Login')">Login</button>
+              <button class="tablinks" onclick="openCity(event, 'Sign Up')">Sign Up</button>
+            <div id="Login" class="tabcontent">
+                    <form> 
+                          Username: <br>
+                          <input type="text" name="username">
+                          <br><br>
+                          Password: <br>
+                          <input type="password" name="password">
+                          <br><br>
+                          <a href="#" class="w3-btn w3-black button">Login</a>
+                      </form>
+            </div>
+            
+            <div id="Sign Up" class="tabcontent">
+                    <form>
+                            Enter Name: <br>
+                            <input type="text" name="name">
+                            <br>
+                            <br>
+                            Enter Email: <br>
+                            <input type="text" name="email">
+                            <br>
+                            <br>
+                            Username: <br>
+                            <input type="text" name="username">
+                            <br><br>
+                            Password: <br>
+                            <input type="password" name="password">
+                            <br><br>
+                            <a href="#" class="w3-btn w3-black button">Sign Up</a>
+                    </form>
+            </div>
+            
+            </div>
+       </div>     
+       <script src="script.js"></script>     
     </body>
-
 </html>
