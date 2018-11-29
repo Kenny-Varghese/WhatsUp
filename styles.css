@@ -9,7 +9,7 @@
       
 }
 .button{
-      margin-top: 250px;
+      margin-top: 70px; 
 }
 .left {
       left: 0;
@@ -37,5 +37,14 @@
       background-color: #b3f0ff;
       padding: 200px;
       margin: 0px;
+}
+div.container{
+      background-color: #00a3cc;
+      padding: 70px;
+      margin-top: 150px;
+}
+div.container2{
+      background-color: #9999ff;
+      padding: 70px;
 }
 
