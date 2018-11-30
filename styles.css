@@ -16,6 +16,7 @@ div.container{
       margin-top: 150px;
       background-color:#F08080;
       border-radius: 7px;
+      opacity: .8;
 }
   
   /* Style the buttons inside the tab */
@@ -32,12 +33,12 @@ div.container{
   
   /* Change background color of buttons on hover */
   .tab button:hover {
-      background-color: #CD5C5C;
+      background-color: #8dc6ff;
   }
   
   /* Create an active/current tablink class */
   .tab button.active {
-      background-color: #F08080;
+      background-color: #8dc6ff;
   }
   
 
@@ -46,13 +47,14 @@ div.container{
       display: none;
       border: 1px solid white;
       border-top: none;
-      background-color: #F08080;
+      background-color: #003d7a;
       padding: 120px;
       opacity: .8;
+      color:white;
       
   }
   .photo{
-      opacity: .5;
+      opacity: .9;
       filter: alpha(opacity=50);
 }
 .left {
@@ -67,9 +69,10 @@ div.container{
       position: relative;
 }
 #title{
-      background-color: #CD5C5C;
+      background-color: #003366;
       padding: 10px;
       color: white;
+      opacity: .8;
       font-size: 20px !important;
   }
   .text-size{
