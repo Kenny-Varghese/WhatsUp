@@ -1,0 +1,29 @@
+.photo{
+    opacity: .9;
+    filter: alpha(opacity=50);
+}
+#title{
+    background-color: #003366;
+    padding: 10px;
+    color: white;
+    opacity: .8;
+    font-size: 20px !important;
+}
+.text-size{
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+#sendMessageBtn{
+    background:#003366;
+    float: right;
+}
+#color{
+    color:#003366;
+    outline-color: #003366;
+}
+.hr {
+    /* display: block; */
+   padding-bottom: 10px;
+   border-bottom: 2px solid #003366;
+   opacity: .8;
+}
