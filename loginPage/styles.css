@@ -1,12 +1,12 @@
 .photo{
-    opacity: .9;
+    opacity: .7;
     filter: alpha(opacity=50);
 }
 #title{
-    background-color: #003366;
+    background-color: rgb(63, 144, 211);
     padding: 10px;
     color: white;
-    opacity: .8;
+  
     font-size: 20px !important;
 }
 .text-size{
