@@ -28,12 +28,12 @@
             <div id="Login" class="tabcontent" >
                     <form> 
                           Username: <br>
-                          <input type="text" name="username">
+                          <input type="text" name="username_login" required>
                           <br><br>
                           Password: <br>
-                          <input type="password" name="password">
+                          <input type="password" name="password_login" required>
                           <br><br>
-                          <a href="loginPage/loginPage.html" id = "login" class="w3-btn w3-black button">Login</a>
+                          <a href="loginPage/loginPage.html" onclick="addUsers('richa', 'hello')" id = "login" class="w3-btn w3-black button" >Login</a>
                       </form>
             </div>
             
@@ -60,6 +60,6 @@
             
             </div>
        </div>     
-       <script src="script.js"></script>     
+       <script src="script.js" ></script>  
     </body>
 </html>

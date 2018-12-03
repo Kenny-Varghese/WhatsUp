@@ -10,4 +10,5 @@ app.get("/", function(req,res) {
 
 app.listen(port, function(){
     console.log("yayyy working!");
+    console.log("*****");
 });
