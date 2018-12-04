@@ -23,19 +23,20 @@
         <!-- <img class="photo" width="100%" src="space.jpg"> -->
         <div class = " left">
             <div class="tab centered">
-              <button class="tablinks" onclick="openCity(event, 'Login')">Login</button>
-              <button class="tablinks" onclick="openCity(event, 'Sign Up')">Sign Up</button>
+              <button class="tablinks" onclick="openEvent(event, 'Login')">Login</button>
+              <button class="tablinks" onclick="openEvent(event, 'Sign Up')">Sign Up</button>
             <div id="Login" class="tabcontent" >
                     <form> 
                           Username: <br>
-                          <input type="text" name="username_login" required>
+                          <input type="text" id = "username_login" name="username_login" required>
                           <br><br>
                           Password: <br>
-                          <input type="password" name="password_login" required>
+                          <input type="password" id= "password_login" name="password_login" required>
                           <br><br>
-                          <a href="loginPage/loginPage.html" onclick="addUsers('richa', 'hello')" id = "login" class="w3-btn w3-black button" >Login</a>
-                      </form>
+                          <a id = "login" class="w3-btn w3-black button" onclick='addUsers();'>Login</a>
+                      </form> 
             </div>
+            
             
             <div id="Sign Up" class="tabcontent">
                     <form>

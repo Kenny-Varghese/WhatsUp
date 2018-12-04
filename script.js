@@ -1,6 +1,7 @@
 var MongoClient = require('mongodb').MongoClient;
 var url = "mongodb://localhost:27017/";
-function openCity(evt, page) {
+function openEvent(evt, page) {
+    console.log("opened")
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
@@ -13,10 +14,12 @@ function openCity(evt, page) {
     document.getElementById(page).style.display = "block";
      evt.currentTarget.className += " active";
 }
-function addUsers(username, password){
+function addUsers(){
     console.log("inside func");
-    username = document.getElementsByName("username_login");
-    password = document.getElementsByName("password_login");
+    username = document.getElementById("username_login").value;
+    password = document.getElementById("password_login").value;
+    console.log(username);
+    console.log(password)
     var insertUser = {username:username, password:password};
     MongoClient.connect(url, { useNewUrlParser: true }, function(err,db){
         if(err){
@@ -49,6 +52,9 @@ function addUsers(username, password){
             console.log(result);
         });
     });
+        window.open("loginPage/loginPage.html");
+    
+   
 
 }
 // function openLogin(){
