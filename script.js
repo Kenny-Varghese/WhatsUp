@@ -1,5 +1,3 @@
-var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://localhost:27017/";
 function openEvent(evt, page) {
     console.log("opened")
     var i, tabcontent, tablinks;
@@ -19,8 +17,10 @@ function addUsers(){
     username = document.getElementById("username_login").value;
     password = document.getElementById("password_login").value;
     console.log(username);
-    console.log(password)
-    var insertUser = {username:username, password:password};
+    console.log(password);
+    var insertUser = {username: username, password: password};
+    var MongoClient = require('mongodb').MongoClient;
+    var url = "mongodb://localhost:27017/";
     MongoClient.connect(url, { useNewUrlParser: true }, function(err,db){
         if(err){
               throw err;
@@ -45,17 +45,14 @@ function addUsers(){
       });
 
        //This is how to find all objects in a collection and put in an array
-       dbo.collection("users").find({}).toArray(function(err,result){
+      dbo.collection("users").find({}).toArray(function(err,result){
             if(err){
                   throw err;
             }
             console.log(result);
-        });
+      });
     });
-        window.open("loginPage/loginPage.html");
-    
-   
-
+    window.open("loginPage/loginPage.html");
 }
 // function openLogin(){
 //     username = document.getElementsByName("username");
