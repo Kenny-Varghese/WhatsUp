@@ -6,9 +6,16 @@
     },
     "dependencies": {
         "@angular/cli": "^7.1.0",
-        "express": "4.16.4",
-        "mongodb": "^3.1.10"
+        "@types/socket.io-client": "^1.4.32",
+        "body-parser": "^1.18.3",
+        "express": "^4.16.4",
+        "mongodb": "^3.1.10",
+        "mongoose": "^5.3.14",
+        "socket.io-client": "^2.2.0"
     },
     "authors": "Richa, Rohan, Kenny",
-    "license": "ISC"
+    "license": "ISC",
+    "devDependencies": {
+        "webpack": "^4.27.0"
+    }
 }
