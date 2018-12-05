@@ -9,8 +9,8 @@ var mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 mongoose.connect("mongodb://localhost:27017/node-demo");
 var nameSchema = new mongoose.Schema({
-    username: String,
-    password: String
+    username_login: String,
+    password_login: String
 });
 var User = mongoose.model("User", nameSchema);
 
@@ -20,9 +20,9 @@ app.get("/", (req, res) => {
 
 app.post("/addname", (req, res) => {
     var myData = new User(req.body);
-    console.log("data: " + myData.username + " " + myData.password);
     myData.save()
         .then(item => {
+            console.log("data: " + myData.username_login + " " + myData.password_login);
             res.send("Name saved to database");
         })
         .catch(err => {
