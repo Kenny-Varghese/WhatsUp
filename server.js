@@ -10,6 +10,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 mongoose.connect('mongodb://localhost:27017/logins',{ useNewUrlParser: true });
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
+var loginSchema = mongoose.Schema({
+      username: String,
+      password: String
+});
+var Login = mongoose.model('login', loginSchema, 'users');
 
 
 app.get("/addname", function(req,res) {
@@ -34,23 +39,14 @@ app.get("/signup", function(req,res) {
 });
 
 app.post("/signup", (req, res) => {
-      db.once('open', function() {
-            console.log("Connected to database");
-            var loginSchema = mongoose.Schema({
-                  username: String,
-                  password: String
-            });
-            var Login = mongoose.model('login', loginSchema, 'users');
-            var newUser = new Login({username: req.body.username_signup, password: req.body.password_signup});
-            newUser.save(function (err,userInfo){
-                  if (err){
-                        return console.error(err);
-                  }
-                  console.log(userInfo.username + " saved to users collection");
-            });
+      var newUser = new Login({username: req.body.username_signup, password: req.body.password_signup});
+      newUser.save(function (err,userInfo){
+            if (err){
+                  return console.error(err);
+            }
+            console.log(userInfo.username + " saved to users collection");
       });
       res.redirect('loginPage/loginPage.html');
-
 });
 
 
