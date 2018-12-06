@@ -15,7 +15,7 @@ mongoose.connect(url,{ useNewUrlParser: true }, function(err,db){
 
 var login = mongoose.model('Login', {username_login: String, password_login: String});
 var message = mongoose.model('Message', {username_login: String, messageString: String});
-
+var signup = mongoose.model('Signup', {name: String, email: String, username_login: String, password_login: String})
 
 
 app.get("/addname", function(req,res) {
@@ -23,15 +23,7 @@ app.get("/addname", function(req,res) {
             res.send(login);
       })
           
-//       var exec = require('child_process').exec,child;
-//       child = exec('loginPage/loginPage.html',
-//       function (error, stdout, stderr) {
-//         console.log('tab opened');
-//         if (error !== null) {
-//           console.log('exec error: ' + error);
-//         }
-//     });
-    // res.render("index:");
+//  
 });
 
 app.post("/addname2", (req, res) => {
@@ -40,13 +32,21 @@ app.post("/addname2", (req, res) => {
     console.log(req.body);
     res.redirect('loginPage/loginPage.html');
 
-//     myData.save((err) => {
-//           sendStatus(500);
-//           res.sendStatus(200);
-//    });
-//    window.open('google.com')
-//    open('loginPage/loginPage.html');
-   // window.open('loginPage/loginPage.html', '_self', false);
+});
+app.get("/signup", function(req,res) {
+    signup.find({}, (err, login)=> {
+          res.send(signup);
+    })
+        
+//  
+});
+
+app.post("/signup", (req, res) => {
+  var myData = new signup(req.body);
+  console.log("test 1");
+  console.log(req.body);
+  res.redirect('loginPage/loginPage.html');
+
 });
 
 
