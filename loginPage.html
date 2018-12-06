@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>"LoginPage!!" </title>
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+                <link href="styles2.css" rel="stylesheet">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+                <div id="title">
+                        <h1 class= "text-size"> My Reminders</h1>
+                </div>
+        </head>
+        <body background= "space.jpg" class="photo">
+                <!-- <img class="photo" width="100%" src="space.jpg"> -->
+                <br>
+                <input id="searchBox" type="text" placeholder="Search.." name="search">
+                <button id="submitBtn" onclick="nc.filterList()" type="submit">Submit</button>
+                
+               <br>
+                <div class="container" style="min-height: 100vh; height: auto;" id="container color">
+                        <div class="card">
+                            <div class="card-content">
+                                <h2 class="center-align color">Reminders</h2>
+                                <div class="hr" style="height: 50%; overflow-y: auto;">
+                                        <div class="collection" id="message-list"></div>
+                                        <div id="color"> </div>
+                                </div>
+                                <div class="row" id="color">
+                                    <div class="col s12">
+                                        <br>
+                                        <div class="row">
+                                            <div class="input-field col">
+                                                <input id="messageInput" type="text">
+                                                <label for="message" id="color" >TO DO</label>
+                                            </div>
+                                            <div class="input-field color"></div>
+                                                <button class="btn" onclick="clicked()">Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
+        
+        <script src="controller.js"></script>
+        <script src="server.js"></script>
+</html>

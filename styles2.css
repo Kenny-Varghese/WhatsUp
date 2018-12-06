@@ -1,0 +1,89 @@
+.photo{
+    opacity: .7;
+    filter: alpha(opacity=50);
+}
+#title{
+    background-color: rgb(63, 144, 211);
+    padding: 10px;
+    color: white;
+    font-size: 20px !important;
+}
+.text-size{
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+#sendMessageBtn{
+    background:#003366;
+    float: right;
+}
+#color{
+    color:#003366;
+    outline-color: #003366;
+}
+.hr {
+    /* display: block; */
+   padding-bottom: 10px;
+   border-bottom: 2px solid #003366;
+   opacity: .8;
+}
+form.example input[type=text] {
+    padding: 4px;
+    font-size: 15px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.example button {
+    float: left;
+    width: 18%;
+    padding: 13px;
+    background: #002233;
+    color: white;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-left: none;
+    cursor: pointer;
+
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* #close {
+    position: absolute;
+
+} */
+    
+/* .close:hover {
+    
+    background-color: #f44336;
+    color: white;
+    box-sizing: border-box;
+} */
+#searchBox{
+    background-color:white;
+    height: 55px;
+    float: left;
+    margin: 5px;
+    padding-left: 25px;
+}
+#submitBtn{
+    float:right;
+    margin-top: -60px;
+    border-radius: 4px;
+    padding: 15px;
+    width: 15%;
+    background-color: #002233;
+    color:white;
+}
+.card{
+    position: relative;
+}
