@@ -7,7 +7,7 @@ var containerDiv = document.getElementById('container');
 
 function clicked(){
     let msg = document.getElementById('sendMessageBtn');
-    console.log("sucks");
+    console.log("ur mom sucks");
 }
 
 var Chat = /** @class */ (function () {
