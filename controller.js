@@ -68,16 +68,16 @@ class NoteComponent {
         // let liSearch = ul.getElementsByTagName("li");
         for(let m = 0; m < 100; m++){
 
-          if (Notes[m] != query) {
-              alert("Search not found!");
-              break;
+          if (Notes[m] == query) {
+            console.log("yes");
+            // collection.appendChild(query);
+            query.style.display = "";
             //   liSearch[m].style.display = "";
           } else {
-            console.log("yes");
-            collection.appendChild(query);
-            query.style.display = "";
+                alert("Search not found!");
+            break;
           }
-          // liSearch[m].style.display = "";
+          document.getElementById('searchBox').value = '';
 
       }
 
