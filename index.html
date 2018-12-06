@@ -1,68 +1,50 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>"WhatsUp!!" </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- <link href="styles.css" rel="stylesheet"> -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    </head>
-    <!-- <body>
-        <img class="photo" width="100%" src="space.jpg">
-        <div class = "tab">
-            <button class="tablinks" onclick="openOther(event, Login)"></button>
-            <button class="tablinks" onclick="openOther(event, SignUp)"></button>
-        </div>
-    </body> -->
-    <body class="photo">
-        <div id="title">
+<head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+      <div id="title">
             <h1 class= "text-size"> Whats Up!</h1>
-        </div>
-        <!-- <img class="photo" width="100%" src="space.jpg"> -->
-        <div class = " left">
+      </div>
+      <!-- <img class="photo" width="100%" src="space.jpg"> -->
+      <div class = " left">
             <div class="tab centered">
-              <button class="tablinks" onclick="openEvent(event, 'Login')">Login</button>
-              <button class="tablinks" onclick="openEvent(event, 'Sign Up')">Sign Up</button>
-            <div id="Login" class="tabcontent" >
-                    <form method="post" action="/addname"> 
-                          Username: <br>
-                          <input type="text" id = "username_login" name="username_login" required>
-                          <br><br>
-                          Password: <br>
-                          <input type="password" id= "password_login" name="password_login" required>
-                          <br><br>
-                          <input type="submit" value="Login" class="w3-btn w3-black button">
-                          <!-- <a id = "login" class="w3-btn w3-black button" >Login</a> -->
-                      </form> 
-            </div>
+                  <button class="tablinks" onclick="openEvent(event, 'Login')">Login</button>
+                  <button class="tablinks" onclick="openEvent(event, 'Sign Up')">Sign Up</button>
+                  <div id="Login" class="tabcontent" >
+                        <form method="post" action="/addname2">
+                              Username: <br>
+                              <input type="text" id = "username_login" name="username_login" required>
+                              <br><br>
+                              Password: <br>
+                              <input type="password" id= "password_login" name="password_login" required>
+                              <br><br>
+                              <!-- <button value="Login" onclick="loginPage/loginPage.html"> Login </button> -->
+                              <!-- <input href="loginPage/loginPage.html" type="submit" value="Login" class="w3-btn w3-black button" /> -->
+                              <!-- <a id = "login" class="w3-btn w3-black button" >Login</a> -->
+                              <input type='button' onclick="location.href='loginPage/loginPage.html';" value="Login"/>
+                              <!-- <a href="loginPage/loginPage.html"><button value="Login" >Login</button></a> -->
+                        </form>
+                  </div>
 
-
-            <div id="Sign Up" class="tabcontent">
-                    <form>
-                            Enter Name: <br>
-                            <input type="text" name="name">
-                            <br>
-                            <br>
-                            Enter Email: <br>
-                            <input type="text" name="email">
-                            <br>
-                            <br>
-                            Username: <br>
-                            <input type="text" name="username">
-                            <br><br>
-                            Password: <br>
-                            <input type="password" name="password">
-                            <br><br>
-                            <a href="loginPage/loginPage.html" class="w3-btn w3-black button">Sign Up & Login</a>
-                    </form>
-            </div>
-
-
-            </div>
-       </div>     
-       <!-- <script src="script.js" ></script>   -->
-
-    </body>
+                  <!-- <div class=”container”>
+                  <br>
+                  <div class=”jumbotron”>
+                  <h1 class=”display-4">Send Message</h1>
+                  <br>
+                  <input id = “name” class=”form-control” placeholder=”Name”>
+                  <br>
+                  <textarea id = “message” class=”form-control” placeholder=”Your Message Here”>
+            </textarea>
+            <br>
+            <button id=”send” class=”btn btn-success”>Send</button>
+      </div>
+      <div id=”messages”>
+</div>
+</div> -->
+<script src="script.js"></script>
+</body>
 </html>
